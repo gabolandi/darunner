@@ -26,13 +26,16 @@ const Styledfooter = styled.footer`
         list-style: none;
         padding: 0;
     }
+    ul li {
+        padding: 5px 0;
+    }
     ul li a {
         color: #646161;
         text-decoration: none;
     }
 
     ul li:hover {
-        background-color: #fff;
+        background-color: white;
         a{
             color: black;
         }
@@ -55,7 +58,7 @@ export const Footer = ({ image, altText, }) => {
         <Styledfooter>
             <div className="emailMarketing">
                 <h2>!Sigamos en contacto!</h2>
-                <p>Registar tu email y recibe un descuento de $20.000</p>
+                <p>Regista tu email y recibe un descuento de $20.000</p>
                 <form>
                     <input type="email" placeholder="Email" />
                     <button type="submit">Suscribirme</button>

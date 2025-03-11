@@ -91,7 +91,7 @@ const StyledCard = styled.div`
 
 .heart.liked .heart-icon {
     stroke: red; /* Color del borde cuando está activo */
-    stroke-width: 1.5px; /* Puedes ajustarlo si lo quieres más grueso al activarse */
+    stroke-width: 1.5px; 
     fill: red; /* Color del interior al activarse */
 }
     `;
@@ -100,6 +100,8 @@ export const Card = ({ image, altText, title, subtitle, price, clubPrice, sizes 
     const [isLiked, setIsLiked] = useState(false); // Estado para el favorito
     const [selectedSize, setSelectedSize] = useState(""); // Estado para la talla seleccionada
     const [selectedGender, setSelectedGender] = useState(""); // Estado para la genero seleccionada
+
+
 
     const clickHandler = (e) => {
         setIsLiked(!isLiked);

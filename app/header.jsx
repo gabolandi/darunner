@@ -42,7 +42,9 @@ const StyledHeader = styled.header`
 export const Header = () => {
     return (
         <StyledHeader>
-            <img src="/logo.png" alt="logo_darunner" />
+            <a href="">
+                <img src="/logo.png" alt="logo_darunner" />
+            </a>
             <div>
                 <ul className="menu">
                     <li><a href="">Inicio</a></li>

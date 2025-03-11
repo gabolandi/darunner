@@ -1,8 +1,11 @@
 {
+  "homepage": "https://gabolandi.github.io/darunner",
   "name": "tienda-prueba",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "start": "vite preview"
@@ -17,5 +20,8 @@
     "react-icons": "^5.5.0",
     "styled-components": "^6.1.15",
     "vite": "^6.2.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
